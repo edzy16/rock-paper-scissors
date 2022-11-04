@@ -9,10 +9,7 @@ function getPlayerchoice() {
     return playerSelection.toLowerCase();
 }
 
-function playround() {
-    const playerSelection = getPlayerchoice();
-    const computerSelection = getComputerChoice();
-    
+function playround(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return "It's a tie!";
     }
