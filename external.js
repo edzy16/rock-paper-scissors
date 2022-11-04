@@ -52,11 +52,11 @@ function game() {
         }
     }
     if (playerScore > computerScore) {
-        return "You win the game!";
+        console.log("You win the game!");
     } else if (playerScore < computerScore) {
-        return "You lose the game!";
+        console.log("You lose the game!");
     } else {
-        return "It's a tie!";
+        console.log("It's a tie!");
     }
 }
 
