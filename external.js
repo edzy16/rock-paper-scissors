@@ -8,8 +8,7 @@ var computerScore = 0;
 
 function playRound(playerSelection) {
     const computerSelection = getComputerChoice();
-    let resultFinal = document.querySelector("#result-text");
-    resultFinal.textContent = resultText;
+    
     
     if (playerSelection === computerSelection) {
         var resultText = `It's a tie! You both chose ${playerSelection}`;
@@ -39,6 +38,8 @@ function playRound(playerSelection) {
     else if(resultText.includes("lose")) {
         computerScore++;
     }
+    let resultFinal = document.querySelector("#result-text");
+    resultFinal.textContent = resultText;
     let playerScoreText = document.querySelector("#player-score");
     playerScoreText.textContent = "Player Score= "+playerScore;
     let computerScoreText = document.querySelector("#computer-score");
